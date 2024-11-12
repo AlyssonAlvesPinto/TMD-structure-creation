@@ -1,0 +1,21 @@
+Example
+
+When running the script, enter the following values when prompted:
+
+Enter a transition metal (e.g., W, Mo): Mo
+Enter a chalcogen (e.g., Se, S, Te): Se
+Enter supercell size along x (e.g., 1, 2): 2
+Enter supercell size along y (e.g., 1, 2): 2
+Enter supercell size along z (e.g., 1, 2): 1
+Enter output filename prefix (e.g., TMD_structure): MoSe2_2x2x1
+
+This example will create a 2x2x1 supercell of MoSe2 and save it in a file named MoSe2_2x2x1.cif. The structure will also be displayed using ASE's visualization tool.
+Script Details
+
+The create_tmd_structure function in the script:
+
+    Defines lattice parameters for a 1H TMD structure.
+    Builds a structure with the specified metal and chalcogen atoms.
+    Scales the structure to the desired supercell size.
+    Saves the structure to a CIF file.
+    Converts the structure to an ASE Atoms object and opens a visualization window.
